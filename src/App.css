@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@700&family=Raleway:wght@400;900&display=swap');
+
+.App {
+  /* background-color: #131516; <- importante agregarlo al elem html*/
+  border-color: #736b5e;
+  color: #e8e6e3;
+  font-family: 'Raleway', sans-serif;
+  /* font-size: 62.5%; 1REM => 10 px! EN ESTRE PROYECTO => INDEX.CSS*/
+  text-align: center;
+  box-sizing: inherit;
+  font-size: 1.6rem; /* <- 16 px */
+  line-height: 1.5;
+  /* background-repeat: no-repeat; */
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3{
+  font-family: 'Playfair Display', serif;
+  margin: 0 0 5rem 0;
+}
+
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+img{
+  max-width: 100%; display: block; 
+}
+
+.linknav{
+  /* transition: inherit; */
+  position: relative;
+  /* box-shadow: inset 0 0 0 0 #037bc0;
+  inset: 0; */
+  transition: all .8s ease-in-out;
+}
+
+.linknav::before{
+  content: "";
+  height: .1rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #037bc0;
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.linknav:hover{
+  font-size: x-large;
+  color:#037bc0;
+
+  
+}
+
+
+.linknav:hover::before{
+  transition: inherit;
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.categoconteiner h2{
+  padding-top: 5rem;
+}
+
+.linkfoot{
+  display: block;
+  padding: .3rem 0;
+  transition: all .5s ease-in-out, box-shadow 1s ease-in-out;
+}
+.linkfoot:hover {
+  /* box-shadow: inset 20rem 0 0 0 #037bc0; */
+  width: 100%;
+  filter: drop-shadow(-.5rem -.5rem 1rem #03a2ff);
+  color: #e3bdac;
+  text-transform: uppercase;
+}
